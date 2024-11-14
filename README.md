@@ -8,12 +8,9 @@ There are 4 tasks which need to be implemented:
 3. The Control Unit, the Sign-extension Unit and the instruction memory.
 4. The testbench and verification of the whole design working via gtkWave and Vbuddy (where appropriate).
 
-Arjun Watve - 
-
-Dominik Hagmann - 
-
-Yuxuan Xie -
-
-Haiyi Yu - 
-
-
+| Team Member     | Role |
+| --------------- | ---- |
+| Arjun Watve     |      |
+| Dominik Hagmann |      |
+| Yuxuan Xie      |      |
+| Haiyi Yu        |      |
