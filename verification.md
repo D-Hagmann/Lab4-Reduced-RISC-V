@@ -1,7 +1,7 @@
 <center>
 
 ## EIE2 Instruction Set Architecture & Compiler (IAC)
-## MY name is Johnny smith
+## MY name is Dom, I'm a don
 ---
 ## Verification - a guide
 
