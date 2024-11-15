@@ -1,7 +1,7 @@
 <center>
 
 ## EIE2 Instruction Set Architecture & Compiler (IAC)
-## MY name is Dom, I'm a don
+## MY name is Dom, I'm a don a macho g
 ---
 ## Verification - a guide
 
