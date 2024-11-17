@@ -1,6 +1,6 @@
 module control #(
     input logic [6:0] opcode,
-    input logic EQ  // Equal flag
+    input logic EQ  // Equal flag,
     input logic [2:0] funct3,
     input logic [6:0] funct7,
     output logic RegWrite,
