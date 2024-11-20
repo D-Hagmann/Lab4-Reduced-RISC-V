@@ -18,6 +18,6 @@ module ALU #(
         3'b000: ALUResult = ALUop1 + ALUop2;
 
 
-        default: ALUREsult = 32'b0;
+        default: ALUResult = 32'b0;
     end
 endmodule
