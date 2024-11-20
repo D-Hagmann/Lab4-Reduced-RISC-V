@@ -8,9 +8,9 @@ There are 4 tasks which need to be implemented:
 3. The Control Unit, the Sign-extension Unit and the instruction memory.
 4. The testbench and verification of the whole design working via gtkWave and Vbuddy (where appropriate).
 
-| Team Member     | Role                         |
-| --------------- | ---------------------------- |
-| Arjun Watve     | Testbench                    |
-| Dominik Hagmann | Register File, ALU , Mux     |
-| Yuxuan Xie      | Program counter              |
-| Haiyi Yu        | Control Unit, Sign extension |
+| Team Member     | Role                         | Branch Name |
+| --------------- | ---------------------------- | ----------- |
+| Arjun Watve     | Testbench                    | Main        |
+| Dominik Hagmann | Register File, ALU , Mux     | Task2       |
+| Yuxuan Xie      | Program counter              | Task1       |
+| Haiyi Yu        | Control Unit, Sign extension | Task3       |
