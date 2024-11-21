@@ -2,6 +2,10 @@ module toptask2 #(
     parameter WIDTH = 32,
     parameter ADD_WIDTH = 5
 )(
+
+    //sign extend
+    input logic [WIDTH - 1:0] ImmOp,
+    
     //mux
     //input   logic [DATA_WIDTH-1:0]  in0, same as RD2
     //input   logic [DATA_WIDTH-1:0]  in1, same as ImmOP
@@ -10,11 +14,11 @@ module toptask2 #(
 
     //ALU
     // input logic [WIDTH - 1:0] ALUop1, same as RD1
-    input logic [WIDTH - 1:0] ALUop2,
     input logic [6:0] opcode,
     input logic [2:0] ALUctrl,
     output logic [WIDTH-1:0] ALUResult,
     output logic EQ
+    
 
     //regfile
     input  logic clk, 
@@ -29,6 +33,7 @@ module toptask2 #(
 
     logic [WIDTH - 1:0] RD1;
     logic [WIDTH - 1:0] RD2;
+    logic [WIDTH - 1:0] ALUop2,
     logic [WIDTH - 1:0] MUXout;
 
 
