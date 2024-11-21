@@ -26,11 +26,21 @@ module top #(
     logic [ADD_WIDTH - 1:0] AD2, //same as rs2
     logic [ADD_WIDTH - 1:0] AD3 //same as rs3
 
-toptask3 control(
+toptask2 ALU(
     .clk(clk),
     .AD1(AD1),
     .AD2(AD2),
     .AD3(AD3),
     .MUXout(MUXout),
-)
+    .ALUResult(ALUResult),
+    .ALUsrc(ALUsrc),
+    .ALUctrl(ALUctrl),
+    .ImmOP(ImmOP),
+    .EQ(EQ),
+    .opcode(opcode)
+
+);
+
+toptask3 Control()
+
 endmodule
