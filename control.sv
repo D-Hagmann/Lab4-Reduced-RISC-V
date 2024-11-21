@@ -1,4 +1,4 @@
-module control #(
+module control (
     input logic [6:0] opcode,
     input logic EQ  // Equal flag,
     input logic [2:0] funct3,
