@@ -5,7 +5,7 @@ module toptask2 #(
     //mux
     //input   logic [DATA_WIDTH-1:0]  in0, same as RD2
     //input   logic [DATA_WIDTH-1:0]  in1, same as ImmOP
-    input   logic                   ALUsrc, //sel in mux
+    input   logic              ALUsrc, //sel in mux
     output  logic [WIDTH-1:0]  MUXout
 
     //ALU
@@ -44,7 +44,7 @@ ALU ALU(
 MUX MUX(
     .in0 (RD2),
     .in1 (ImmOp),
-    .sel (ALU),
+    .sel (ALUsrc),
     .MUXout (MUXout)
     
 );
@@ -53,7 +53,7 @@ Regfile regfile (
     .clk (clk),
     .WE3 (RegWrite),
     .WD3 (ALUResult),
-    .AD1 (), are we doing rs1 or AD1 etc
+    .AD1 (), //are we doing rs1 or AD1 etc?
     .AD2 (),
     .AD3 (),
     .RD1 (RD1),
@@ -61,3 +61,5 @@ Regfile regfile (
     .a0 (a0)
 
 );
+
+endmodule
