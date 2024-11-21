@@ -3,9 +3,9 @@ module mux #(
 ) (
     input   logic [DATA_WIDTH-1:0]  in0,
     input   logic [DATA_WIDTH-1:0]  in1,
-    input   logic                   sel,
-    output  logic [DATA_WIDTH-1:0]  out
+    input   logic                   sel, //ALUsrc
+    output  logic [DATA_WIDTH-1:0]  MUXout
 );
-    assign out = sel ? in1 : in0;
+    assign MUXout = sel ? in1 : in0;
 
 endmodule

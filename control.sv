@@ -1,10 +1,10 @@
 module control (
     input logic [6:0] opcode,
-    input logic EQ  // Equal flag,
+    input logic EQ,  // Equal flag
     input logic [2:0] funct3,
     input logic [6:0] funct7,
     output logic RegWrite,
-    output logic ALUctrl,
+    output logic [2:0] ALUctrl,
     output logic ALUsrc,
     output logic ImmSrc,
     output logic PCsrc
@@ -32,7 +32,7 @@ module control (
                     RegWrite = 0;
                     ALUctrl = 1; // ALU should subtract rs1 and rs2 to set EQ correctly
                     ALUsrc = 0; // Use register value for rs2
-                    PCsrc = EQ[1] ? 0 : 1; // Take the branch if rs1 and rs2 are not equal (EQ[1] would be the 'not equal' flag)
+                    PCsrc = EQ ? 0 : 1; // Take the branch if rs1 and rs2 are not equal (EQ[1] would be the 'not equal' flag)
                 end
                 
                 default: begin

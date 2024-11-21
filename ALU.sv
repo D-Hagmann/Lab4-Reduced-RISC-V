@@ -1,7 +1,8 @@
 module ALU #(
     parameter WIDTH = 32,
 )(
-    input logic [WIDTH - 1:0] ALUop1, ALUop2,
+    input logic [WIDTH - 1:0] ALUop1, 
+    input logic [WIDTH - 1:0] ALUop2,
     input logic [6:0] opcode,
     input logic [2:0] ALUctrl,
     output logic [WIDTH-1:0] ALUResult,
