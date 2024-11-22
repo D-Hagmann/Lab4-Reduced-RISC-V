@@ -10,7 +10,6 @@ module toptask2# (
     //pc
     input logic clk,
     input logic rst,
-    input logic [DATA_WIDTH-1:0] pc_in,
     output logic [DATA_WIDTH-1:0] pc_out,
 
 );
@@ -27,7 +26,7 @@ PCMUX pcsrc (
 PC pc (
     .clk (clk),
     .rst (rst),
-    .pc_in (pc_in),
+    .pc_in (next_PC),
     .pc_out (pc_out)
 );
 
