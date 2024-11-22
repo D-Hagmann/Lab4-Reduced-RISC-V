@@ -8,22 +8,22 @@ module toptask1# (
     input logic PCsrc;
 
     //pc
-    input logic clk,
-    input logic rst,
-    output logic [DATA_WIDTH-1:0] pc_out,
+    input logic clk;
+    input logic rst;
+    output logic [DATA_WIDTH-1:0] pc_out;
 
 );
 
     logic [DATA_WIDTH-1:0] next_PC;
 
-PCMUX pcsrc (
+pcsrc PCMUX (
     .inc_PC (inc_PC),
     .PC_i (PC_i),
     .ImmOp (ImmOp),
     .PCsrc (PCsrc)
 );
 
-PC pc (
+pc PC (
     .clk (clk),
     .rst (rst),
     .pc_in (next_PC),
