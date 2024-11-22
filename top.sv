@@ -57,6 +57,11 @@ toptask3 Control(
 );
 
 toptask1 Counter(
+    .clk(clk),
+    .rst(rst),
+    .PCsrc(PCsrc),
+    .pc_out(pc),
+    .ImmOp(ImmOp),
     
 )
 
