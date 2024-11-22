@@ -41,6 +41,10 @@ toptask2 ALU(
 
 );
 
-toptask3 Control()
+toptask3 Control(
+    .clk(clk),
+    .rst(rst),
+    .PC_i()
+)
 
 endmodule
