@@ -7,9 +7,9 @@ module top #(
 );
     assign a0 = 32'd5;
     
-    logic              ALUsrc, //sel in mux
+    logic              ALUsrc, //sel in mux in ALU
     logic [WIDTH-1:0]  MUXout,
-    logic PCsrc,
+    logic PCsrc, // sel in mux in PC
 
     //ALU
     // input logic [WIDTH - 1:0] ALUop1, same as RD1
