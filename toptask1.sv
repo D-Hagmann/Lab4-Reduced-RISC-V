@@ -2,15 +2,15 @@ module toptask1# (
     parameter WIDTH = 32,
 )(
     //pcsrc
-    input logic [DATA_WIDTH-1:0] inc_PC;
-    input logic [DATA_WIDTH-1:0] PC_i;
-    input logic [DATA_WIDTH-1:0] ImmOp;
-    input logic PCsrc;
+    input logic [DATA_WIDTH-1:0] inc_PC,
+    input logic [DATA_WIDTH-1:0] PC_i,
+    input logic [DATA_WIDTH-1:0] ImmOp,
+    input logic PCsrc,
 
     //pc
-    input logic clk;
-    input logic rst;
-    output logic [DATA_WIDTH-1:0] pc_out;
+    input logic clk,
+    input logic rst,
+    output logic [DATA_WIDTH-1:0] pc_out
 
 );
 
