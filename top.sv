@@ -19,7 +19,7 @@ module top #(
     logic [WIDTH-1:0] ALUResult,
     logic EQ,
     logic [WIDTH-1:0] pc,
-    logic [WIDTH-1:0] ??, 
+    logic [WIDTH-1:0] RegWrite, 
     //regfile 
     //input logic WE3, same as Regwrite
     //input logic [WIDTH - 1:0] WD3, same as ALUResult
@@ -45,7 +45,7 @@ toptask2 ALU(
 toptask3 Control(
     .clk(clk),
     .PC(pc),
-    .RegWrite(),
+    .RegWrite(RegWrite),
     .ImmOp(ImmOp),
     .rs1(AD1),
     .rs2(AD2),
@@ -62,7 +62,7 @@ toptask1 Counter(
     .PCsrc(PCsrc),
     .pc_out(pc),
     .ImmOp(ImmOp),
-    .
+    .pc_i(pc)
 )
 
 endmodule

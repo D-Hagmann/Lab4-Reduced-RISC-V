@@ -18,7 +18,7 @@ module toptask1# (
 pcsrc PCMUX (
     .PC_i (PC_i),
     .ImmOp (ImmOp),
-    .PCsrc (PCsrc)
+    .PCsrc (PCsrc),
     .next_PC(next_PC)
 );
 
