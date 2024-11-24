@@ -23,12 +23,12 @@ module toptask3 #(
     logic [6:0] funct7;
 
 
-assign opcode = instr[6:0];
-assign funct3 = instr[14:12];
-assign funct7 = instr[31:25];
-assign rd = instr[11:7];
-assign rs1 = instr[19:15];
-assign rs2 = instr[24:20];
+    assign opcode = instr[6:0];
+    assign funct3 = instr[14:12];
+    assign funct7 = instr[31:25];
+    assign rd = instr[11:7];
+    assign rs1 = instr[19:15];
+    assign rs2 = instr[24:20];
 
 memory memory_unit(
     .clk(clk),
