@@ -58,9 +58,9 @@ Regfile regfile (
     .clk (clk),
     .WE3 (RegWrite),
     .WD3 (ALUResult),
-    .AD1 (), //are we doing rs1 or AD1 etc?
-    .AD2 (),
-    .AD3 (),
+    .AD1 (AD1), 
+    .AD2 (AD2),
+    .AD3 (AD3),
     .RD1 (RD1),
     .RD2 (RD2),
     .a0 (a0)
